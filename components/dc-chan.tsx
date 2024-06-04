@@ -17,8 +17,8 @@ function DCchan() {
     const mediaRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
-        if (mediaRef.current?.children) {
-          gsap.fromTo(mediaRef.current.children,
+        if (mediaRef.current) {
+          gsap.fromTo(mediaRef.current,
             { y: '100%', opacity: 0, scale: 2}, 
             {
               y: '0%',
