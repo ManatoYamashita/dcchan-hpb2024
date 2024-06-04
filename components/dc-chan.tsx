@@ -17,6 +17,22 @@ function DCchan() {
     const mediaRef = useRef<HTMLVideoElement>(null);
 
     useEffect(() => {
+        if (mediaRef.current?.children) {
+          gsap.fromTo(mediaRef.current.children,
+            { y: '100%', opacity: 0, scale: 2}, 
+            {
+              y: '0%',
+              opacity: 1,
+              scale: 1,
+              duration: 2,
+              stagger: 0.2,
+              ease: 'Circ.inOut',
+            }    
+          );
+        }
+      }, [mediaRef]);
+
+    useEffect(() => {
         setIsClient(true);
       }, []);
 
@@ -68,7 +84,7 @@ function DCchan() {
                 draggable={false}
                 poster='/images/dcchan.webp'
             >
-                {/* <source src={dcchanMov} type="video/quicktime" /> */}
+                <source src={dcchanMov} type="video/quicktime" />
                 <source src={dcchanWebm} type="video/webm" />
                 <Image src={dcchan_default} alt="dc-chan" fill className={styles.image} />
             </video>
