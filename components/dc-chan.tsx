@@ -65,8 +65,10 @@ function DCchan() {
                 onMouseEnter={handleMouseEnter}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
+                draggable={false}
+                poster='/images/dcchan.webp'
             >
-                <source src={dcchanMov} type="video/quicktime" />
+                {/* <source src={dcchanMov} type="video/quicktime" /> */}
                 <source src={dcchanWebm} type="video/webm" />
                 <Image src={dcchan_default} alt="dc-chan" fill className={styles.image} />
             </video>
