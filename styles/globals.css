@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+    --dc-primary-sb: #06C0FF;
+    --dc-primary-b: #0070D9;
+}
+body {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+
+    overflow: hidden;
+    -ms-overflow-style: none;
+    transition: all 0.5s ease-in-out;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+main {
+    height: 100%;
+}
+.nav {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+img {
+    pointer-events: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    color: black;
+    font-size: .5rem;
+    padding: .5rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    z-index: 2;
+
+}
+
+.body-default {
+    background-color: var(--dc-primary-sb);
+    background-image: linear-gradient(147deg, var(--dc-primary-sb) 0%, var(--dc-primary-b) 74%);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .body-home {
+    background-color: var(--dc-primary-sb);
+    background-image: linear-gradient(147deg, var(--dc-primary-sb) 0%, var(--dc-primary-b) 74%);
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  .body-about {
+    background-color: pink;
+    background-image: linear-gradient(147deg, rgb(199, 199, 199) 0%, white 74%);
+    transition: all 0.5s ease-in-out;
+
+  }
+  
+  .body-talk {
+    background-color: orange;
+    background-image: linear-gradient(147deg, orange 0%, yellow 74%);
+    transition: all 0.5s ease-in-out;
+  
+}
+  
