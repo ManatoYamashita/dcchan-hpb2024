@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from"@/styles/who.module.scss";
-import ImgSrc from "@/public/images/example.jpg";
+import ImgSrc from "@/public/images/face.jpg";
 
 type Props = {
     title: string,

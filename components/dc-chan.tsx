@@ -68,6 +68,7 @@ function DCchan() {
             >
                 <source src={dcchanMov} type="video/quicktime" />
                 <source src={dcchanWebm} type="video/webm" />
+                <Image src={dcchan_default} alt="dc-chan" fill className={styles.image} />
             </video>
 
             {isHovered && mediaRef.current && (
