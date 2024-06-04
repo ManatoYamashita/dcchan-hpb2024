@@ -54,9 +54,10 @@ export default function Home() {
   useEffect(() => {
     if (r3Ref.current?.children) {
       gsap.fromTo(r3Ref.current.children,
-        { x: '-100%' }, 
+        { x: '-100%', opacity: 0}, 
         {
           x: '0%',
+          opacity: 1,
           duration: .5,
           stagger: 0.1,
           delay: 3.4,

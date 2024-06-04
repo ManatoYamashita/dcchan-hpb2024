@@ -59,13 +59,14 @@ function DCchan() {
                 muted
                 playsInline
                 autoPlay
+                preload='auto'
                 ref={mediaRef}
                 className={styles.image}
                 onMouseEnter={handleMouseEnter}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
             >
-                <source src={dcchanMov} type="video/quicktime" />
+                <source src={dcchanMov} type="video/mov" />
                 <source src={dcchanWebm} type="video/webm" />
                 {/* <Image
                     src={dcchan_default}
