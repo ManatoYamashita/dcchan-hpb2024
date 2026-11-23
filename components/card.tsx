@@ -14,7 +14,10 @@ function Card({ title, subtitle, description }: Props) {
     return (
         <section className={styles.card}>
             <Link href="" className={styles.container}>
-                <Image src={headImg} className={styles.card__image} alt="header image" fill sizes="50vw" priority />
+                <Image src={headImg} className={styles.card__image} alt="header image" fill
+                    // The card is about 50vw wide. On narrow portrait screens the 33vh-tall card is narrower than the
+                    // image's aspect ratio, so object-fit: cover draws it wider than the card; keep 100vw there.
+                    sizes="(max-width: 480px) 100vw, 50vw" priority />
                 <div className={styles.card__overlay}>
                     <div className={styles.card__header}>
                         <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
