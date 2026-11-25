@@ -17,7 +17,9 @@ function Who({title, description}: Props) {
                     className={styles.image}
                     alt="でじこんちゃん プロフィール"
                     fill
-                    sizes="(max-width: 480px) 30vw, (max-width: 1000px) 10vw"
+                    // The box is width: max(40vw, 220px) and the image takes 40% of it,
+                    // so the rendered width is 88px below a 550px viewport and 16vw above.
+                    sizes="(max-width: 550px) 88px, 16vw"
                 />
             </div>
             <section className={styles.details}>
